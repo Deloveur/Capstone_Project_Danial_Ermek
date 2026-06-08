@@ -1,51 +1,154 @@
 # Capstone Project Danial & Ermek
 
-## Nike Retail Data Cleaning Project
+## Nike Retail Data Cleaning and Preparation
 
-### Prepared by
+### Authors
 - Danial
 - Ermek
 
-## Project Overview
-This project focuses on cleaning and preparing Nike retail data for business intelligence analysis and Power BI dashboard development.
+---
 
-## Tools Used
+## Project Overview
+
+This project focuses on cleaning, validating, and preparing Nike retail product data for business intelligence analysis and Power BI dashboard development.
+
+The objective was to transform raw retail data into a clean and structured dataset suitable for reporting, visualization, and decision-making.
+
+---
+
+## Technologies Used
+
 - Python
 - Pandas
 - Jupyter Notebook
+- CSV Files
 - Power BI
+- GitHub
+
+---
+
+## Dataset Description
+
+The project uses Nike retail product data containing information about:
+
+- Product names
+- Product categories
+- Subcategories
+- Country codes
+- Prices
+- Sale prices
+- Gender segments
+- Product identifiers
+- Snapshot dates
+
+Original dataset size:
+
+- Rows: 103,679
+- Columns: 35
+
+---
 
 ## Data Cleaning Process
 
-### Step 1. Dataset Overview
-Loaded the dataset and checked its structure.
+### Step 1. Dataset Loading
 
-### Step 2. Missing Values Check
-Verified missing values across all columns.
+Loaded the Nike retail dataset using Pandas and verified successful import.
 
-### Step 3. Duplicate Records Check
-Checked for duplicate records in the dataset.
+### Step 2. Dataset Overview
 
-### Step 4. Data Type Transformation
-Converted date columns into datetime format.
+Reviewed dataset structure and inspected sample records.
 
-### Step 5. Removing Unnecessary Columns
-Removed:
+### Step 3. Missing Values Analysis
+
+Checked all columns for missing values.
+
+Result:
+
+- No missing values detected.
+
+### Step 4. Duplicate Records Detection
+
+Verified the dataset for duplicated rows.
+
+Result:
+
+- Duplicate rows found: 0
+
+### Step 5. Data Type Transformation
+
+Converted the `snapshot_date` column into datetime format for future analysis.
+
+### Step 6. Removing Unnecessary Columns
+
+Removed technical columns not required for business analysis:
+
 - product_url
 - canonical_url
 - image_url
 
-### Step 6. Exporting Clean Dataset
-Exported cleaned data into CSV format.
+### Step 7. Exporting Clean Dataset
+
+Saved the cleaned dataset as a CSV file for Power BI dashboard creation.
+
+---
 
 ## Results
-- Dataset size: 103679 rows
-- Original columns: 35
-- Final columns: 32
+
+### Before Cleaning
+
+- Rows: 103,679
+- Columns: 35
+
+### After Cleaning
+
+- Rows: 103,679
+- Columns: 32
+
+### Data Quality Summary
+
 - Missing values: 0
 - Duplicate rows: 0
+- Date format standardized
+- Unnecessary columns removed
 
-## Repository Contents
-- kapstown.ipynb
-- nike_cleaned.csv
-- README.md
+---
+
+## Repository Structure
+
+```text
+Capstone_Project_Danial_Ermek
+│
+├── README.md
+├── kapstown.ipynb
+└── nike_cleaned.rar
+```
+
+### Archive Contents
+
+```text
+nike_cleaned.rar
+│
+├── NIKE_GLOBAL_CATALOGUE.csv
+└── nike_cleaned.csv
+```
+
+---
+
+## Business Value
+
+The cleaned dataset can be used for:
+
+- Sales analysis
+- Product performance analysis
+- Country-level comparisons
+- Category analysis
+- Power BI dashboard development
+- Business intelligence reporting
+
+---
+
+## Conclusion
+
+The Nike retail dataset was successfully cleaned, validated, and prepared for analytical use.
+
+The final dataset contains structured and reliable information that can be used for visualization, reporting, and business decision-making in Power BI.
